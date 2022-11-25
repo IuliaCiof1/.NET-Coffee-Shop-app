@@ -1,0 +1,14 @@
+C:\Users\iulia\source\repos\PS\PS\bin\Debug\PS.exe.config
+C:\Users\iulia\source\repos\PS\PS\bin\Debug\PS.exe
+C:\Users\iulia\source\repos\PS\PS\bin\Debug\PS.pdb
+C:\Users\iulia\source\repos\PS\PS\obj\Debug\PS.csprojAssemblyReference.cache
+C:\Users\iulia\source\repos\PS\PS\obj\Debug\PS.Properties.Resources.resources
+C:\Users\iulia\source\repos\PS\PS\obj\Debug\PS.csproj.GenerateResource.cache
+C:\Users\iulia\source\repos\PS\PS\obj\Debug\PS.csproj.CoreCompileInputs.cache
+C:\Users\iulia\source\repos\PS\PS\obj\Debug\PS.exe
+C:\Users\iulia\source\repos\PS\PS\obj\Debug\PS.pdb
+C:\Users\iulia\source\repos\PS\PS\obj\Debug\PS.Comenzi.resources
+C:\Users\iulia\source\repos\PS\PS\obj\Debug\PS.Main.resources
+C:\Users\iulia\source\repos\PS\PS\obj\Debug\PS.Meniu.resources
+C:\Users\iulia\source\repos\PS\PS\obj\Debug\PS.NoteComanda.resources
+C:\Users\iulia\source\repos\PS\PS\obj\Debug\PS.NotePlata.resources
