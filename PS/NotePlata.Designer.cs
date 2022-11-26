@@ -42,9 +42,10 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Info;
-            this.label1.Location = new System.Drawing.Point(45, 35);
+            this.label1.Location = new System.Drawing.Point(60, 43);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(147, 33);
+            this.label1.Size = new System.Drawing.Size(184, 43);
             this.label1.TabIndex = 19;
             this.label1.Text = "Note de plata";
             // 
@@ -52,9 +53,10 @@
             // 
             this.btnInapoi.BackColor = System.Drawing.Color.RosyBrown;
             this.btnInapoi.Font = new System.Drawing.Font("Segoe Print", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInapoi.Location = new System.Drawing.Point(234, 482);
+            this.btnInapoi.Location = new System.Drawing.Point(312, 593);
+            this.btnInapoi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnInapoi.Name = "btnInapoi";
-            this.btnInapoi.Size = new System.Drawing.Size(109, 41);
+            this.btnInapoi.Size = new System.Drawing.Size(145, 50);
             this.btnInapoi.TabIndex = 18;
             this.btnInapoi.Text = "Inapoi";
             this.btnInapoi.UseVisualStyleBackColor = false;
@@ -62,32 +64,35 @@
             // txtBox1
             // 
             this.txtBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBox1.Location = new System.Drawing.Point(51, 86);
+            this.txtBox1.Location = new System.Drawing.Point(68, 106);
+            this.txtBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtBox1.Multiline = true;
             this.txtBox1.Name = "txtBox1";
             this.txtBox1.ReadOnly = true;
             this.txtBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtBox1.Size = new System.Drawing.Size(292, 358);
+            this.txtBox1.Size = new System.Drawing.Size(388, 440);
             this.txtBox1.TabIndex = 17;
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(90, 171);
+            this.dataGridView1.Location = new System.Drawing.Point(150, 227);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(240, 150);
             this.dataGridView1.TabIndex = 20;
             // 
             // NotePlata
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(410, 559);
+            this.ClientSize = new System.Drawing.Size(547, 688);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnInapoi);
             this.Controls.Add(this.txtBox1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "NotePlata";
             this.Text = "NotePlata";
             this.Load += new System.EventHandler(this.NotePlata_Load);

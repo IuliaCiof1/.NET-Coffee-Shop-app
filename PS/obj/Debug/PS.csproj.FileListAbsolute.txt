@@ -12,3 +12,17 @@ C:\Users\iulia\source\repos\PS\PS\obj\Debug\PS.Main.resources
 C:\Users\iulia\source\repos\PS\PS\obj\Debug\PS.Meniu.resources
 C:\Users\iulia\source\repos\PS\PS\obj\Debug\PS.NoteComanda.resources
 C:\Users\iulia\source\repos\PS\PS\obj\Debug\PS.NotePlata.resources
+D:\Git Repos\.NET-Coffee-Shop-app\PS\bin\Debug\PS.exe.config
+D:\Git Repos\.NET-Coffee-Shop-app\PS\bin\Debug\PS.exe
+D:\Git Repos\.NET-Coffee-Shop-app\PS\bin\Debug\PS.pdb
+D:\Git Repos\.NET-Coffee-Shop-app\PS\obj\Debug\PS.csprojAssemblyReference.cache
+D:\Git Repos\.NET-Coffee-Shop-app\PS\obj\Debug\PS.Main.resources
+D:\Git Repos\.NET-Coffee-Shop-app\PS\obj\Debug\PS.Meniu.resources
+D:\Git Repos\.NET-Coffee-Shop-app\PS\obj\Debug\PS.Comenzi.resources
+D:\Git Repos\.NET-Coffee-Shop-app\PS\obj\Debug\PS.NoteComanda.resources
+D:\Git Repos\.NET-Coffee-Shop-app\PS\obj\Debug\PS.NotePlata.resources
+D:\Git Repos\.NET-Coffee-Shop-app\PS\obj\Debug\PS.Properties.Resources.resources
+D:\Git Repos\.NET-Coffee-Shop-app\PS\obj\Debug\PS.csproj.GenerateResource.cache
+D:\Git Repos\.NET-Coffee-Shop-app\PS\obj\Debug\PS.csproj.CoreCompileInputs.cache
+D:\Git Repos\.NET-Coffee-Shop-app\PS\obj\Debug\PS.exe
+D:\Git Repos\.NET-Coffee-Shop-app\PS\obj\Debug\PS.pdb

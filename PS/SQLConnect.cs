@@ -12,7 +12,7 @@ namespace PS
     {
         public static DataSet ConnectDB(string query)
         {
-            string connect = @"Data Source=IULICA\WINCC;Initial Catalog=PS;Integrated Security=True";
+            string connect = @"Data Source=DESKTOP-D12MC23\SQLEXPRESS;Initial Catalog=PS;Integrated Security=True";
 
             SqlConnection cnn = new SqlConnection(connect);
             cnn.Open();
