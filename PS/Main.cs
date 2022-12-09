@@ -42,5 +42,24 @@ namespace PS
             comanda.ShowDialog();
 
         }
+
+        private void btnIncasari_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Incasari inc = new Incasari();
+            inc.ShowDialog();
+        }
+
+        private void btnAngajati_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Angajati ang = new Angajati();
+            ang.ShowDialog();
+        }
+
+        public void Eroare(string er)
+        {
+            MessageBox.Show(er);
+        }
     }
 }

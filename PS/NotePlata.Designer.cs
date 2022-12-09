@@ -32,8 +32,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnInapoi = new System.Windows.Forms.Button();
             this.txtBox1 = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -54,18 +52,19 @@
             this.btnInapoi.BackColor = System.Drawing.Color.RosyBrown;
             this.btnInapoi.Font = new System.Drawing.Font("Segoe Print", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInapoi.Location = new System.Drawing.Point(312, 593);
-            this.btnInapoi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnInapoi.Margin = new System.Windows.Forms.Padding(4);
             this.btnInapoi.Name = "btnInapoi";
             this.btnInapoi.Size = new System.Drawing.Size(145, 50);
             this.btnInapoi.TabIndex = 18;
             this.btnInapoi.Text = "Inapoi";
             this.btnInapoi.UseVisualStyleBackColor = false;
+            this.btnInapoi.Click += new System.EventHandler(this.btnInapoi_Click);
             // 
             // txtBox1
             // 
             this.txtBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBox1.Location = new System.Drawing.Point(68, 106);
-            this.txtBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtBox1.Margin = new System.Windows.Forms.Padding(4);
             this.txtBox1.Multiline = true;
             this.txtBox1.Name = "txtBox1";
             this.txtBox1.ReadOnly = true;
@@ -73,30 +72,20 @@
             this.txtBox1.Size = new System.Drawing.Size(388, 440);
             this.txtBox1.TabIndex = 17;
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(150, 227);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(240, 150);
-            this.dataGridView1.TabIndex = 20;
-            // 
             // NotePlata
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(547, 688);
-            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnInapoi);
             this.Controls.Add(this.txtBox1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "NotePlata";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "NotePlata";
             this.Load += new System.EventHandler(this.NotePlata_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -106,7 +95,6 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnInapoi;
-        private System.Windows.Forms.TextBox txtBox1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        public System.Windows.Forms.TextBox txtBox1;
     }
 }

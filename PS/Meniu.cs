@@ -19,22 +19,31 @@ namespace PS
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            //CAFEA
-            DisplayList(SQLConnect.ConnectDB("select Produs, Pret, Gramaj from Meniu_Produse where Categorie='Cafea'"), listBoxCafea);
-            DisplayList(SQLConnect.ConnectDB("select Produs, Pret, Gramaj from Meniu_Produse where Categorie='Ceai'"), listBoxCeai);
-            DisplayList(SQLConnect.ConnectDB("select Produs, Pret, Gramaj from Meniu_Produse where Categorie='Suc'"), listBoxSuc);
-            DisplayList(SQLConnect.ConnectDB("select Produs, Pret, Gramaj from Meniu_Produse where Categorie='Desert'"), listBoxDesert);
+            DataSet ds=  SQLConnect.ConnectDB("select * from Meniu_Produse order by Categorie;");
+            DisplayList(ds);
         }
 
-        private void DisplayList(DataSet d, ListBox listBox)
-        {
-            List<string> list = new List<string>();
-            foreach (DataRow dataRow in d.Tables[0].Rows)
+        private void DisplayList(DataSet ds)
+        { 
+            richTextBox1.Clear();
+            string categorie = null;
+            foreach (DataRow dr in ds.Tables[0].Rows)
             {
-                list.Add(dataRow["Produs"].ToString() + "...................." + dataRow["Pret"].ToString() +
-                    "lei...................." + dataRow["Gramaj"].ToString() + "g");
+                if (categorie != dr["Categorie"].ToString())
+                {
+                    categorie = dr["Categorie"].ToString();
+
+                    richTextBox1.AppendText("\n  ==== " + dr["Categorie"].ToString() + " ====\n  " + dr["Produs"].ToString() + "...................." + dr["Pret"].ToString() +
+                    "lei...................." + dr["Gramaj"].ToString() + "g\n");
+                    richTextBox1.Select(richTextBox1.Find(categorie), categorie.Length);
+                    richTextBox1.SelectionFont = new Font("Segoe Print", 14, FontStyle.Bold);
+                }
+                else
+                {
+                    richTextBox1.AppendText("  " + dr["Produs"].ToString() + "...................." + dr["Pret"].ToString() +
+                   "lei...................." + dr["Gramaj"].ToString() + "g\n");
+                }
             }
-            listBox.DataSource = list;
         }
 
         private void btnInapoi_Click(object sender, EventArgs e)
@@ -42,6 +51,36 @@ namespace PS
             this.Hide();
             Main main = new Main();
             main.ShowDialog();
+        }
+
+        private void btnCafea_Click(object sender, EventArgs e)
+        {
+            DataSet ds = SQLConnect.ConnectDB("select * from Meniu_Produse where Categorie='Cafea';");
+            DisplayList(ds);
+        }
+
+        private void btnCeai_Click(object sender, EventArgs e)
+        {
+            DataSet ds = SQLConnect.ConnectDB("select * from Meniu_Produse where Categorie='Ceai';");
+            DisplayList(ds);
+        }
+
+        private void btnDesert_Click(object sender, EventArgs e)
+        {
+            DataSet ds = SQLConnect.ConnectDB("select * from Meniu_Produse where Categorie='Desert';");
+            DisplayList(ds);
+        }
+
+        private void btnSuc_Click(object sender, EventArgs e)
+        {
+            DataSet ds = SQLConnect.ConnectDB("select * from Meniu_Produse where Categorie='Suc';");
+            DisplayList(ds);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            DataSet ds = SQLConnect.ConnectDB("select * from Meniu_Produse order by Categorie;");
+            DisplayList(ds);
         }
     }
 }

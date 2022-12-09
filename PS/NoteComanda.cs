@@ -20,7 +20,6 @@ namespace PS
         private void btnInapoi_Click(object sender, EventArgs e)
         {
             this.Hide();
-          
         }
 
         private void NoteComanda_Load(object sender, EventArgs e)
@@ -32,17 +31,14 @@ namespace PS
                     $"Comanda: {dr["Numar Comanda"].ToString()}\t" +
                     $"Masa: {dr["Numar Masa"].ToString()}\r\n" +
                     $"Ospatar: {dr["Ospatar"].ToString()}\r\n\r\n";
-                string []items = dr["Nota Comanda"].ToString().Split(',');
+                string []items = dr["Nota Comanda"].ToString().Split((char)13);
                 foreach(string item in items)
                 {
                     txtBox1.Text = txtBox1.Text + item + "\r\n";
                 }
             }
+            txtBox1.Text = $"{txtBox1.Text}-----------------------------------------------------\r\n";
         }
 
-        private void txtBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

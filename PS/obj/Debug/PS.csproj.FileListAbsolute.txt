@@ -26,3 +26,8 @@ D:\Git Repos\.NET-Coffee-Shop-app\PS\obj\Debug\PS.csproj.GenerateResource.cache
 D:\Git Repos\.NET-Coffee-Shop-app\PS\obj\Debug\PS.csproj.CoreCompileInputs.cache
 D:\Git Repos\.NET-Coffee-Shop-app\PS\obj\Debug\PS.exe
 D:\Git Repos\.NET-Coffee-Shop-app\PS\obj\Debug\PS.pdb
+D:\Git Repos\.NET-Coffee-Shop-app\PS\obj\Debug\PS.Incasari.resources
+D:\Git Repos\.NET-Coffee-Shop-app\PS\obj\Debug\PS.Angajati.resources
+D:\Git Repos\.NET-Coffee-Shop-app\PS\obj\Debug\PS.OreSuplimentare.resources
+D:\Git Repos\.NET-Coffee-Shop-app\PS\bin\Debug\Siticone.Desktop.UI.dll
+D:\Git Repos\.NET-Coffee-Shop-app\PS\obj\Debug\PS.csproj.CopyComplete

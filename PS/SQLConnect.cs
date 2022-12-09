@@ -12,14 +12,24 @@ namespace PS
     {
         public static DataSet ConnectDB(string query)
         {
-            string connect = @"Data Source=DESKTOP-D12MC23\SQLEXPRESS;Initial Catalog=PS;Integrated Security=True";
-
-            SqlConnection cnn = new SqlConnection(connect);
-            cnn.Open();
-
-            SqlDataAdapter da = new SqlDataAdapter(query, connect);
             DataSet ds = new DataSet();
-            da.Fill(ds);
+            try
+            {
+                string connect = @"Data Source=DESKTOP-D12MC23\SQLEXPRESS;Initial Catalog=PS;Integrated Security=True";
+
+                SqlConnection cnn = new SqlConnection(connect);
+                cnn.Open();
+
+                SqlDataAdapter da = new SqlDataAdapter(query, connect);
+                
+                da.Fill(ds);
+                cnn.Close();
+            }
+            catch (Exception e)
+            {
+                Main main = new Main();
+                main.Eroare(e.Message);
+            }
             return ds;
         }
     }
