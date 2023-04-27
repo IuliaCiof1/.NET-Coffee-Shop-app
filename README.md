@@ -1,2 +1,3 @@
 # .NET-Coffee-Shop-app
-Application for managing a Coffee shop connected to a MS SQL Server database
+Windows Forms Application for managing a Coffee shop connected to a MS SQL Server database
+
